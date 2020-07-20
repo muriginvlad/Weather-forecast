@@ -1,0 +1,6 @@
+module Pods_HW12 {
+  umbrella header "Pods-HW12-umbrella.h"
+
+  export *
+  module * { export * }
+}
