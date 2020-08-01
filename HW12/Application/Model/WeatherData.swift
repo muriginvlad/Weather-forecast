@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherData{
+struct WeatherData: Codable{
     
     var currentWeather = 0
     var condition = 0

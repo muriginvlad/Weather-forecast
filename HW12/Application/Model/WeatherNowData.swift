@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherNowData{
+struct WeatherNowData: Codable {
     
     var currentWeather = 0
     var condition = 0
@@ -17,8 +17,6 @@ class WeatherNowData{
     var city = ""
 
     init?(data: NSDictionary) {
-        
-  
         
         guard
             let city = data["name"] as? String,
@@ -32,15 +30,10 @@ class WeatherNowData{
             return nil
         }
         
-        
-        
         self.currentWeather = currentWeather.intValue
         self.condition = condition.intValue
         self.description = description
         self.city = city
-
-    
-        
     }
     
     func updateWeatherIcon(condition: Int) -> String {

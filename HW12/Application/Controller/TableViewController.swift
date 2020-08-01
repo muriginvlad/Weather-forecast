@@ -14,6 +14,8 @@ class TableViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var weathers: [WeatherData] = []
+    var weatherData: [WeatherData] = []
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,16 @@ class TableViewController: UIViewController {
             self.weathers = weathers
             self.tableView.reloadData()
         }
+        
+        if let savedWeatherNowData = self.defaults.object(forKey: "savedWeatherData") as? Data {
+            let decoder = JSONDecoder()
+            if let weatherData = try? decoder.decode([WeatherData].self, from: savedWeatherNowData) {
+                self.weatherData = weatherData
+            }
+        }
+        
+        weathers = weatherData
+        self.tableView.reloadData()
     }
     
 }
@@ -42,7 +54,6 @@ extension TableViewController: UITableViewDataSource {
         cell.dayLabelCell.text = weather.data
         cell.dayTimeLabelCell.text = weather.time
         cell.weatherImageCell.image = UIImage(named: "\(weather.updateWeatherIcon(condition: weather.condition))")
-  
         
         return cell
         

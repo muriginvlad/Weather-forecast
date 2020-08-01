@@ -29,17 +29,21 @@ class WeatherLoader{
                 let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
                 let jsonDict = json  as? NSDictionary{
                 
-                // вот тут ты прописываешь что сохраняется из JSON запроса
-                // попробуй проверить и напечатать jsonDict до того, как сделдать переменнцю с классом погоды
-                
                 var weathers: [WeatherData] = []
                 let arrayList = jsonDict["list"] as! NSArray
-                
+                                
                 for item in arrayList {
                     if let currentWeather = WeatherData(data: item as! NSDictionary){
                         weathers.append(currentWeather)
                     }
                 }
+                
+                let encoder = JSONEncoder()
+                if let encoded = try? encoder.encode(weathers) {
+                    let defaults = UserDefaults.standard
+                    defaults.set(encoded, forKey: "savedWeatherData")
+                }
+                
                 DispatchQueue.main.async {
                     completion(weathers)
                 }
@@ -54,9 +58,18 @@ class WeatherLoader{
         { response in
             if let objects = try? response.result.get(), let jsonDict = objects as? NSDictionary
             {
+
                 var weathers: [WeatherNowData] = []
+                
                 let vocabularyWeather = WeatherNowData(data: jsonDict )
                 weathers.append(vocabularyWeather!)
+                
+                let encoder = JSONEncoder()
+                if let encoded = try? encoder.encode(weathers) {
+                    let defaults = UserDefaults.standard
+                    defaults.set(encoded, forKey: "savedWeatherNowData")
+                }
+                                
                 DispatchQueue.main.async {
                     completion(weathers)
                 }

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26773A6602BA9AF10E9B6A77 /* libPods-HW12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7468D9DC464C08AE6DC7F8 /* libPods-HW12.a */; };
+		85DF2429B69C9A7816B65707 /* Pods_HW12.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A515C551A1543CE2870CA68E /* Pods_HW12.framework */; };
 		860A4DA824B5F03800F72B94 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A4DA724B5F03800F72B94 /* TableViewController.swift */; };
 		861305D724B1E0A900AD3DE6 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861305D624B1E0A900AD3DE6 /* WeatherCell.swift */; };
+		864F787B24C61CC900D7D954 /* WeatherDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F787A24C61CC900D7D954 /* WeatherDataBase.swift */; };
 		8666E65324AF8BCB000167D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666E65224AF8BCB000167D9 /* AppDelegate.swift */; };
 		8666E65524AF8BCB000167D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666E65424AF8BCB000167D9 /* SceneDelegate.swift */; };
 		8666E65724AF8BCB000167D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666E65624AF8BCB000167D9 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		2ADD705489B7262FFA4EBCA5 /* Pods-HW12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW12.release.xcconfig"; path = "Pods/Target Support Files/Pods-HW12/Pods-HW12.release.xcconfig"; sourceTree = "<group>"; };
 		860A4DA724B5F03800F72B94 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		861305D624B1E0A900AD3DE6 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		864F787A24C61CC900D7D954 /* WeatherDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataBase.swift; sourceTree = "<group>"; };
 		8666E64F24AF8BCA000167D9 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8666E65224AF8BCB000167D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8666E65424AF8BCB000167D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +38,7 @@
 		86938BF324B63D320066E8B1 /* WeatherNowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNowData.swift; sourceTree = "<group>"; };
 		86A3791B24B0B4610094CF9F /* WeatherLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLoader.swift; sourceTree = "<group>"; };
 		86DD413F24B091FE00992074 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
-		8E7468D9DC464C08AE6DC7F8 /* libPods-HW12.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HW12.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A515C551A1543CE2870CA68E /* Pods_HW12.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW12.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B9E5B1D0CD2BD69F3A67E6 /* Pods-HW12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW12.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HW12/Pods-HW12.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26773A6602BA9AF10E9B6A77 /* libPods-HW12.a in Frameworks */,
+				85DF2429B69C9A7816B65707 /* Pods_HW12.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +66,7 @@
 		368A1DFFBE6935CA39E94051 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8E7468D9DC464C08AE6DC7F8 /* libPods-HW12.a */,
+				A515C551A1543CE2870CA68E /* Pods_HW12.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +87,7 @@
 				86DD413F24B091FE00992074 /* WeatherData.swift */,
 				86938BF324B63D320066E8B1 /* WeatherNowData.swift */,
 				86A3791B24B0B4610094CF9F /* WeatherLoader.swift */,
+				864F787A24C61CC900D7D954 /* WeatherDataBase.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,7 +152,7 @@
 				8666E64B24AF8BCA000167D9 /* Sources */,
 				8666E64C24AF8BCA000167D9 /* Frameworks */,
 				8666E64D24AF8BCA000167D9 /* Resources */,
-				938D7CD1C723B2E9433D9BDB /* [CP] Copy Pods Resources */,
+				AB2DFA8176A1328C259E080A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,22 +210,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		938D7CD1C723B2E9433D9BDB /* [CP] Copy Pods Resources */ = {
+		AB2DFA8176A1328C259E080A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HW12/Pods-HW12-resources.sh",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${SRCROOT}/Pods/Target Support Files/Pods-HW12/Pods-HW12-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HW12/Pods-HW12-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HW12/Pods-HW12-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C446C6C0622BE53168920237 /* [CP] Check Pods Manifest.lock */ = {
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864F787B24C61CC900D7D954 /* WeatherDataBase.swift in Sources */,
 				86DD414024B091FF00992074 /* WeatherData.swift in Sources */,
 				860A4DA824B5F03800F72B94 /* TableViewController.swift in Sources */,
 				8666E65724AF8BCB000167D9 /* ViewController.swift in Sources */,
