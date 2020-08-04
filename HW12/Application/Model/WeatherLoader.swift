@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Alamofire
+import Alamofire 
 
 let city = "Moscow"
 let app_key = "5ab5b8a2057b34a888477a705432469c"

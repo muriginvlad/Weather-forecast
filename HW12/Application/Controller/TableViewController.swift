@@ -29,11 +29,11 @@ class TableViewController: UIViewController {
             let decoder = JSONDecoder()
             if let weatherData = try? decoder.decode([WeatherData].self, from: savedWeatherNowData) {
                 self.weatherData = weatherData
+                self.weathers = weatherData
+                self.tableView.reloadData()
             }
         }
         
-        weathers = weatherData
-        self.tableView.reloadData()
     }
     
 }
