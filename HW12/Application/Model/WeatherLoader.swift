@@ -30,6 +30,7 @@ class WeatherLoader{
                 let jsonDict = json  as? NSDictionary{
                 
                 var weathers: [WeatherData] = []
+                
                 let arrayList = jsonDict["list"] as! NSArray
                                 
                 for item in arrayList {

@@ -21,8 +21,8 @@ class TableViewController: UIViewController {
         super.viewDidLoad()
         
         WeatherLoader().loadWeathers { weathers in
-            self.weathers = weathers
-            self.tableView.reloadData()
+//           self.weathers = weathers
+//            self.tableView.reloadData()
         }
         
         if let savedWeatherNowData = self.defaults.object(forKey: "savedWeatherData") as? Data {

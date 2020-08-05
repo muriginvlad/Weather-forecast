@@ -34,8 +34,8 @@ class ViewController: UIViewController {
         weatherWeekButton.layer.cornerRadius = 20
                 
         WeatherLoader().loadWeathers2 { weathers in
-            self.weathers = weathers
-            self.updateWeather()
+//            self.weathers = weathers
+//            self.updateWeather()
         }
         
         if let savedWeatherNowData = self.defaults.object(forKey: "savedWeatherNowData") as? Data {
